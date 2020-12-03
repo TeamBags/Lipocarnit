@@ -1,0 +1,44 @@
+::-ms-clear {
+  display: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#comebacker_main_div {
+  display: none !important;
+  height: 0px !important;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+select:-moz-focusring,
+a:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+*:focus,
+*:visited,
+*:active,
+*:hover {
+  outline: 0 !important;
+}
+
+a,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  outline: 0 !important;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}

@@ -1,0 +1,221 @@
+.select
+	width: 100%
+	width: 300px
+	height: 50px
+	display: flex
+	align-items: center
+	border: 1px solid grey
+	border-radius: 30px
+	padding: 5px 0
+	&.circle
+		.select__selected, .option
+			border-radius: 50%
+	&__custom
+		width: 80px
+		height: 100%
+		border-right: 1px solid #cccccc
+		cursor: pointer
+		padding-right: 10px
+		padding-left: 20px
+		position: relative
+		display: flex
+		align-items: center
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			right: 10px
+			top: 50%
+			transform: translateY(-50%)
+			width: 14px
+			height: 8px
+			background-image: url('../img/form-down.png')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 100% 100%
+		&.opened
+			.select__options
+				display: block
+	&__selected
+		position: relative
+		width: 30px
+		height: 30px
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-position: center
+	&__options
+		background-size: auto 100%
+		position: absolute
+		z-index: 10
+		display: none
+		box-shadow: inset 2px 0 10px rgba(0, 0, 0, .07)
+		border: 1px solid #edebe4
+		height: 195px
+		min-width: 45px
+		overflow-y: scroll
+		overflow-x: hidden
+		top: 0
+		right: 27px
+		background-color: #fff
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+		scrollbar-width: thin
+		scrollbar-color: #eb2315 #f1b5b2
+		padding: 5px
+
+		&::-webkit-scrollbar-button
+			background-repeat: no-repeat
+			width: 5px
+			height: 0
+		&::-webkit-scrollbar-track
+			background-color: #f1b5b2
+		&::-webkit-scrollbar-thumb
+			border-radius: 20px
+			background-color: #eb2315
+		&::-webkit-scrollbar-thumb:hover
+			background-color: #eb2315
+		&::-webkit-resizer
+			background-repeat: no-repeat
+			width: 4px
+			height: 0
+		&::-webkit-scrollbar
+			width: 5px
+	&__input
+		border: none
+		height: 100%
+		flex: 1
+		border-radius: 30px
+		padding-left: 10px
+
+
+.x_country_select
+	display: none
+
+.select__selected, .option
+	//Albania
+	&.AL
+		background-image: url('../img/al.svg')
+	//Slovenia
+	&.SL
+		background-image: url('../img/sl.svg')
+	//Slovak Republic
+	&.SK
+		background-image: url('../img/sk.svg')
+	//Estonia
+	&.EE
+		background-image: url('../img/ee.svg')
+	//Netherlands
+	&.BG
+		background-image: url('../img/bg.svg')
+	//Belgium
+	&.BE
+		background-image: url('../img/be.svg')
+	//Luxembourg
+	&.LU
+		background-image: url('../img/lu.svg')
+	//Armenia
+	&.AM
+		background-image: url('../img/am.svg')
+	//Azerbaijaz
+	&.AZ
+		background-image: url('../img/az.svg')
+	//Indonesia
+	&.ID
+		background-image: url('../img/id.svg')
+	//Malaysia
+	&.MY
+		background-image: url('../img/my.svg')
+	//Nigeria
+	&.NG
+		background-image: url('../img/ng.svg')
+	//Ukraine
+	&.UA
+		background-image: url('../img/ua.svg')
+	//Russia
+	&.RU
+		background-image: url(../img/ru.svg)
+	//Kazakhstan
+	&.KZ
+		background-image: url(../img/kz.svg)
+	//Kyrgyzstan
+	&.KG
+		background-image: url(../img/kg.svg)
+	//Belarus
+	&.BY
+		background-image: url(../img/by.svg)
+	//Тайланд
+	&.TH
+		background-image: url(../img/th.svg)
+	//Georgia
+	&.GE
+		background-image: url(../img/ge.svg)
+	//Republic of Moldova
+	&.MD
+		background-image: url(../img/md.svg)
+	//Bulgaria
+	&.BG
+		background-image: url(../img/bg.svg)
+	//Cyprus
+	&.CY
+		background-image: url(../img/cy.svg)
+	//Czechia
+	&.CZ
+		background-image: url(../img/cz.svg)
+	//Germany
+	&.DE
+		background-image: url(../img/de.svg)
+	//Англоязычные страны
+	&.EN
+		background-image: url(../img/en.svg)
+	//Spain
+	&.ES
+		background-image: url(../img/es.svg)
+	//France
+	&.FR
+		background-image: url(../img/fr.svg)
+	//Croatia
+	&.HR
+		background-image: url(../img/hr.svg)
+	//Hungary
+	&.HU
+		background-image: url(../img/hu.svg)
+	//Italy
+	&.IT
+		background-image: url(../img/it.svg)
+	//Poland
+	&.PL
+		background-image: url(../img/pl.svg)
+	//Portugal
+	&.PT
+		background-image: url(../img/pt.svg)
+	//Romania
+	&.RO
+		background-image: url(../img/ro.svg)
+	//Austria
+	&.AT
+		background-image: url(../img/at.svg)
+	//Latvia
+	&.LV
+		background-image: url(../img/lv.svg)
+	//Republic of Lithuania
+	&.LT
+		background-image: url(../img/lt.svg)
+
+.option
+	width: 30px
+	height: 30px
+	margin: auto
+	display: block
+	background-size: 100% 100%
+	background-position: center
+	background-repeat: no-repeat
+	&:not(:last-of-type)
+		margin-bottom: 7px
+	&__text
+		display: none
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.select__options
+		right: 0
