@@ -1,11 +1,15 @@
 .photos {
 	&__title {
 		text-align: center;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
+		@include rm(480) {
+			margin-bottom: 25px;
+		}
+		@include rm(768) {	
+			margin-bottom: 32px;
+		}
 	}
-	@include rm(480) {
-		margin-bottom: 30px;
-	}
+
 	&__subtitle {
 		font-size: 24px;
 		text-align: center;
