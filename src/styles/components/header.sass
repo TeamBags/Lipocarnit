@@ -1,40 +1,160 @@
 .header
 	overflow: hidden
+	+rm(1024)
+		overflow: inherit
+		position: relative
+		&.block
+			padding-top: 70px
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			right: calc(50% - 238px)
+			width: 337px
+			height: 643px
+			background-image: url('../img/header_girl.png')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	+rm(1220)
+		&.block
+			padding-top: 92px
+			padding-bottom: 46px
+			&::before
+				height: 692px
+				right: calc(50% - 320px)
+	&__wrapper
+		+rm(640)
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			align-items: center
+		+rm(1024)
+			align-items: flex-start
+			justify-content: space-between
+			position: relative
+	&__info
+		margin-bottom: 15px
+		+rm(640)
+			width: 100%
+			margin-bottom: 57px
+		+rm(1024)
+			max-width: 400px
+			margin: 0
+		+rm(1220)
+			max-width: 500px
 	&__title
 		text-align: center
 		font-size: 47px
 		margin-bottom: 5px
 		text-transform: uppercase
+		+rm(480)
+			font-size: 50px
+		+rm(640)
+			font-size: 54px
+		+rm(768)
+			font-size: 66px
+		+rm(1024)
+			font-size: 74px
+			text-align: left
+		+rm(1220)
+			font-size: 84px
+			margin-bottom: 2px
 	&__desc
 		text-align: center
 		font-size: 19px
 		color: #343434
 		margin-bottom: 10px
+		+rm(640)
+			font-size: 21px
+			margin-bottom: 15px
+		+rm(1024)
+			text-align: left
+			margin-bottom: 20px
+		+rm(1220)
+			font-size: 22px
+			margin-bottom: 32px
 	&__text
 		text-align: center
 		font-weight: 900
 		font-size: 21px
 		line-height: 1.2
 		margin-bottom: 10px
+		+rm(640)
+			font-size: 24px
+			max-width: 90%
+			margin: auto
+			margin-bottom: 15px
+		+rm(768)
+			font-size: 28px
+		+rm(1024)
+			text-align: left
+			max-width: 100%
+			font-size: 34px
+			margin-bottom: 30px
+		+rm(1220)
+			font-size: 44px
+			line-height: 48px
+			margin-bottom: 43px
 	&__list
 		max-width: 360px
 		width: 100%
 		margin: auto
-		margin-bottom: 15px
+		+rm(640)
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			max-width: 100%
+		+rm(1024)
+			display: block
+			margin-bottom: 30px
+		+rm(1220)
+			margin-bottom: 45px
+
 	&__medals
 		display: flex
 		justify-content: center
-		margin-bottom: 15px
+		margin-bottom: 60px
+		&--mob
+			display: none
+			+rm(1024)
+				display: flex
+		&--desc
+			+rm(1024)
+				display: none
+		+rm(640)
+			margin-bottom: 0
+		+rm(1024)
+			justify-content: flex-start
+	&__center
+		+rm(640)
+			margin-right: 20px
 	&__prod
-		max-width: 250px
-		width: 100%
 		position: relative
 		left: calc(50% - 85px)
-		margin-bottom: 50px
+		max-width: 250px
+		width: 100%
+		+rm(640)
+			max-width: 280px
+			left: calc(50% - 93px)
+		+rm(1024)
+			position: absolute
+			bottom: -130px
+			max-width: 260px
+			left: calc(50% - 113px)
+		+rm(1220)
+			bottom: -149px
+			max-width: 300px
+			left: calc(50% - 171px)
 	&__form
 		max-width: 270px
 		width: 100%
 		margin: auto
+		+rm(640)
+			margin: 0
+		+rm(1024)
+			padding-top: 30px
 
 
 
@@ -42,6 +162,9 @@
 	color: $grey
 	font-size: 18px
 	line-height: 1.2
+
+	+rm(768)
+		font-size: 19px
 	&__item
 		position: relative
 		padding-left: 30px
@@ -60,10 +183,29 @@
 			background-color: #ffffff
 			box-shadow: 0 0 0 4px #cdea93
 			margin: 4px
-
+		+rm(640)
+			&:not(:last-of-type)
+				margin-bottom: 0
+				margin-right: 15px
+		+rm(1024)
+			&:not(:last-of-type)
+				margin-right: 0
+				margin-bottom: 20px
+		+rm(1220)
+			padding-left: 39px
+			&:not(:last-of-type)
+				margin-bottom: 24px
 .medals
 	&__wrap
 		width: 80px
 		display: block
 		&:not(:last-of-type)
 			margin-right: 10px
+		+rm(640)
+			width: 90px
+			&:not(:last-of-type)
+				margin-right: 15px
+		+rm(1220)
+			width: 93px
+			&:not(:last-of-type)
+				margin-right: 19px

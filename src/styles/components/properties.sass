@@ -1,16 +1,70 @@
 .properties
 	padding-bottom: 10px
+	+rm(480)
+		padding-bottom: 15px
+	+rm(768)
+		padding-bottom: 25px
+	+rm(1024)
+		&.block
+			padding-top: 80px
+	+rm(1220)
+		&.block
+			padding-top: 123px
+			padding-bottom: 105px
 	&__title
 		text-align: center
 		margin-bottom: 20px
+		+rm(1024)
+			text-align: left
+			max-width: 90%
+		+rm(1220)
+			max-width: 60%
+			margin-bottom: 41px
+			&.title
+				font-size: 49px
+				line-height: 50px
+	&__wrapper
+		+rm(1024)
+			display: flex
+			align-items: flex-end
+		+rm(1220)
+			position: relative
+	&__left
+		margin-bottom: 30px
+		+rm(768)
+			margin-bottom: 40px
+		+rm(1024)
+			margin-bottom: 0
+			margin-right: 130px
 	&__desc
 		text-align: center
 		font-weight: 900
 		margin-bottom: 15px
 		font-size: 20px
 		line-height: 1.2
-	&__left
-		margin-bottom: 30px
+		+rm(480)
+			font-size: 22px
+		+rm(640)
+			font-size: 24px
+			margin-bottom: 20px
+		+rm(768)
+			font-size: 26px
+		+rm(1024)
+			text-align: left
+		+rm(1220)
+			font-size: 30px
+			margin-bottom: 40px
+	&__list
+		+rm(480)
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			justify-content: space-between
+		+rm(1024)
+			max-width: 550px
+			width: 100%
+		+rm(1220)
+			max-width: 780px
 	&__right
 		max-width: 250px
 		width: 100%
@@ -29,10 +83,30 @@
 			left: 31%
 			transform: translateX(-50%)
 			z-index: -1
+		+rm(480)
+			&::before
+				width: 360px
+		+rm(1024)
+			position: relative
+			left: auto
+			max-width: 280px
+		+rm(1220)
+			position: absolute
+			bottom: -30px
+			right: -5px
+			max-width: 287px
+			&::before
+				width: 429px
+				height: 237px
+				top: -50px
+				left: 22%
 	&__medal
 		position: absolute
 		top: -20px
 		left: -20px
+		+rm(1024)
+			top: -60px
+			left: -10px
 
 
 .property
@@ -42,13 +116,25 @@
 	margin: auto
 	&:not(:last-of-type)
 		margin-bottom: 20px
+	+rm(480)
+		max-width: 100%
+		width: calc(100%/2 - 10px)
+		margin: 0
+		&:nth-of-type(3)
+			margin-bottom: 0
+	+rm(1220)
+		width: 195px
+		&:not(:last-of-type)
+			margin-bottom: 0
 	&__wrap-img
 		margin-bottom: 7px
 		text-align: center
 		img
 			margin: auto
+		+rm(1220)
+			margin-bottom: 32px
 	&__text
 		color: $dark-grey
 		font-weight: 500
-		line-height: 16px
+		font-size: 17px
 		line-height: 1.2
