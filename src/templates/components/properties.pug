@@ -1,0 +1,44 @@
+mixin property(property)
+	.property
+		.property__wrap-img
+			source(srcset="img/"+ property.src + '.webp', type="image/webp")
+			img(src="img/"+ property.src + '.jpg', alt="property")
+		p.property__text!=property.text
+
+-
+	const propertyArray = [
+		{
+			src: 'property_1',
+			text: 'Снижение голода'
+		},
+		{
+			src: 'property_2',
+			text: 'Сжигание жировых отложений'
+		},
+		{
+			src: 'property_3',
+			text: 'Омолаживающий эффект'
+		},
+		{
+			src: 'property_4',
+			text: 'Укрепление сердечно-сосудистой системы'
+		}
+	];
+
+
+section.properties.block
+	.container
+		h2.properties__title.title Катехин — основной компонент в зеленом чае, который помогает похудеть
+		.properties__wrapper
+			.properties__left
+				p.properties__desc.green Свойства катехина для похудения:
+				.properties__list
+					each property in propertyArray
+						+property(property)
+			.properties__right
+				picture
+					source(srcset="img/product.webp", type="image/webp")
+					img.properties__prod(src="img/product.png", alt="Lipocarnit")
+				picture
+					source(srcset="img/medal_1.webp", type="image/webp")
+					img.properties__medal(src="img/medal_1.png", alt="medal")
