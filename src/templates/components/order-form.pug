@@ -1,0 +1,23 @@
+.order-form
+	.order-form__top
+		p.order-form__ttl Только сегодня 
+			span.date-0(data-format="dd monthFull")
+		.order-form__price.price
+			.price__col.price__col--old
+				p.price__name Старая цена
+				.price__wrap
+					span.price__val.x_price_previous 900
+					span.price__currency.x_currency грн
+			.price__col.price__col--new
+				p.price__name Новая цена
+				.price__wrap
+					span.price__val.x_price_current 450
+					span.price__currency.x_currency грн
+		.order-form__form
+			include form
+		.order-form__security.security
+			img.security__ico(src="img/security.png" alt="security")
+			p.security__text Ваши данные защищены!
+	.order-form__bottom Осталось 
+			span.lastpack 10
+			|  упаковок по&nbsp;Акции

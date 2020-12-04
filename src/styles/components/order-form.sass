@@ -1,0 +1,106 @@
+.order-form
+	box-shadow: 0 24px 46px rgba(217, 217, 217, 0.59)
+	position: relative
+	border-radius: 3px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		top: -50px
+		left: 53%
+		transform: translateX(-50%)
+		width: 91px
+		height: 67px
+		background: url('../img/sale.png') no-repeat center
+		background-size: cover
+	&__top
+		background-color: #ffffff
+		padding: 33px 22px 20px
+	&__ttl
+		text-align: center
+		color: #222222
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 23px
+		span
+			display: block
+	&__price
+		display: flex
+		justify-content: center
+		margin-bottom: 24px
+	&__form
+		margin-bottom: 18px
+	&__security
+		max-width: 95%
+		margin: auto
+	&__bottom
+		background: $green
+		color: #ffffff
+		text-align: center
+		padding: 11px
+		span
+			color: #f24841
+			font-weight: 900
+
+
+.price
+	&__col
+		&--old
+			
+			margin-right: 15px
+			padding-right: 15px
+			border-right: 1px solid transparentize(#377f1b, .7)
+			.price
+				&__name
+					font-size: 12px
+					margin-bottom: 5px
+				&__wrap
+					color: #444444
+					position: relative
+					&::before, &::after
+						content: ''
+						display: block
+						position: absolute
+						background: transparentize(#f24841, .2)
+						height: 1px
+						width: 100%
+					&::before
+						transform-origin: center
+						top: 50%
+						transform: rotate(11deg)
+					&::after
+						transform-origin: center
+						top: 50%
+						transform: rotate(-11deg)
+				&__val
+					font-size: 32px
+				&__currency
+					font-size: 13px
+		&--new
+			.price
+				&__name
+					font-size: 15px
+					font-weight: 500
+				&__wrap
+					color: #222222
+				&__val
+					font-size: 35px
+					font-weight: 700
+				&__currency
+					font-size: 15px
+	&__name
+		color: #666666
+	&__val
+		line-height: 100%
+
+
+
+.security
+	display: flex
+	align-items: center
+	&__ico
+		flex-shrink: 0
+		margin-right: 11px
+	&__text
+		color: #000000
+		font-size: 15px
