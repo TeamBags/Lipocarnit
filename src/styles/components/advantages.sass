@@ -1,0 +1,276 @@
+.advantages
+	+rm(1220)
+		padding-top: 77px
+		padding-bottom: 100px
+	&__title
+		margin-bottom: 5px
+		text-align: center
+		span
+			text-transform: uppercase
+		+rm(1220)
+			margin-bottom: 12px
+	&__desc
+		text-align: center
+		font-size: 18px
+		margin-bottom: 20px
+		color: $dark-grey
+		+rm(1024)
+			font-size: 20px
+			max-width: 70%
+			width: 100%
+			margin: auto
+			margin-bottom: 30px
+		+rm(1220)
+			font-size: 22px
+			line-height: 24px
+			max-width: 60%
+			margin-bottom: 82px
+	&__wrapper
+		display: flex
+		flex-direction: column
+		margin-bottom: 25px
+		+rm(640)
+			flex-direction: row
+			justify-content: space-between
+			flex-wrap: wrap
+		+rm(1220)
+			flex-wrap: nowrap
+			position: relative
+			margin-bottom: 77px
+	&__col
+		margin-bottom: 30px
+		background-color: #efefef
+		border-radius: 40px
+		padding: 15px
+		text-align: center
+		+rm(480)
+			text-align: left
+		+rm(640)
+			width: calc(50% - 10px)
+		+rm(1024)
+			background: none
+			border-radius: 0
+			padding: 0
+			width: 33%
+			margin-bottom: 0
+			&:last-of-type
+				.advantage__ttl
+					margin-left: auto
+				.advantage__top
+					text-align: right
+					flex-direction: row-reverse
+				.advantage__img
+					left: 0
+					right: auto
+				.list-adv
+					text-align: right
+		+rm(1220)
+			width: 100%
+			max-width: 470px
+			flex-shrink: 0
+			&:last-of-type
+				.advantage__text
+					white-space: nowrap
+				.advantage__img
+					left: 34px
+				.list-adv__item
+					margin-left: auto
+	&__center
+		order: 1
+		+rm(640)
+			flex: 1
+		+rm(1024)
+			order: 0
+		+rm(1220)
+			position: absolute
+			top: -10px
+			left: 50%
+			transform: translateX(-50%)
+	&__prod
+		position: relative
+		left: calc(50% - 85px)
+		max-width: 250px
+		width: 100%
+		+rm(1024)
+			max-width: 230px
+			left: calc(50% - 75px)
+		+rm(1220)
+			max-width: 277px
+			left: calc(50% - 97px)
+	&__medals
+		display: flex
+		align-items: center
+		justify-content: center
+	&__main
+		text-align: center
+		color: $dark-grey
+		font-size: 19px
+		line-height: 1.2
+		font-weight: 700
+		padding-bottom: 20px
+		margin-bottom: 20px
+		border-bottom: 1px solid #d6dfc6
+		+rm(480)
+			font-size: 21px
+		+rm(640)
+			font-size: 23px
+			margin-bottom: 30px
+			padding-bottom: 30px
+		+rm(768)
+			font-size: 25px
+		+rm(1024)
+			font-size: 28px
+			margin-bottom: 40px
+			padding-bottom: 40px
+		+rm(1220)
+			font-size: 32px
+			line-height: 32px
+			max-width: 79%
+			width: 100%
+			margin: auto
+			margin-bottom: 88px
+			padding-bottom: 81px
+	&__bottom
+		+rm(1024)
+			display: flex
+			align-items: center
+			justify-content: space-between
+	&__text
+		text-align: center
+		margin-bottom: 15px
+		color: $dark-grey
+		font-size: 18px
+		font-weight: 700
+		line-height: 1.2
+		+rm(480)
+			font-size: 19px
+			margin-bottom: 20px
+		+rm(640)
+			font-size: 20px
+		+rm(768)
+			font-size: 22px
+		+rm(1024)
+			text-align: left
+			max-width: 35%
+			margin-right: 20px
+		+rm(1220)
+			max-width: 28%
+	&__cert
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		justify-content: center
+	&__sertificat
+		width: 120px
+		border: 4px solid $green
+		border-radius: 6px
+		overflow: hidden
+		&:nth-of-type(odd)
+			margin-right: 15px
+		&:nth-of-type(-n+2)
+			margin-bottom: 15px
+		+rm(480)
+			width: 150px
+		+rm(640)
+			width: 140px
+			border: 5px solid $green
+			&:nth-of-type(-n+2)
+				margin-bottom: 0
+			&:nth-of-type(-n+3)
+				margin-right: 15px
+		+rm(1220)
+			width: 156px
+			&:nth-of-type(-n+3)
+				margin-right: 49px
+				border: 7px solid $green
+
+.advantage
+	&__top
+		color: $dark-grey
+		margin-bottom: 10px
+		padding-bottom: 10px
+		border-bottom: 1px solid $green
+		+rm(480)
+			text-align: left
+			display: flex
+			align-items: center
+		+rm(1024)
+			background-color: #efefef
+			border-radius: 40px
+			padding-bottom: 0
+			border-bottom: none
+			padding: 10px 20px
+			position: relative
+			margin-bottom: 0
+		+rm(1220)
+			padding: 13px 32px
+	&__wrap
+		+rm(480)
+			width: calc(100% - 40px)
+		+rm(1024)
+			width: 100%
+	&__ttl
+		font-size: 20px
+		margin-bottom: 5px
+		font-weight: 700
+		+rm(768)
+			font-size: 21px
+			white-space: nowrap
+		+rm(1024)
+			white-space: normal
+			font-size: 22px
+			max-width: 90%
+		+rm(1220)
+			font-size: 25px
+			margin-bottom: 7px
+	&__text
+		font-size: 17px
+		+rm(1220)
+			font-size: 18px
+	&__img
+		display: none
+		+rm(480)
+			display: block
+			width: 72px
+		+rm(640)
+			width: 80px
+			flex-shrink: 0
+		+rm(1024)
+			position: absolute
+			top: -30px
+			right: -20px
+			width: auto
+		+rm(1220)
+			top: -50px
+			right: 22px
+
+
+
+.list-adv
+	color: $grey
+	font-size: 17px
+	line-height: 1.2
+	+rm(480)
+		text-align: center
+	+rm(640)
+		text-align: left
+	+rm(1024)
+		font-size: 18px
+		padding: 20px
+	+rm(1220)
+		padding: 39px 33px
+		line-height: 23px
+	&__item
+		&:not(:last-of-type)
+			margin-bottom: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid transparentize(#d6dfc6, .2)
+		+rm(768)
+			&:not(:last-of-type)
+				margin-bottom: 12px
+				padding-bottom: 12px
+		+rm(1220)
+			max-width: 89%
+			&:not(:last-of-type)
+				margin-bottom: 26px
+				padding-bottom: 26px

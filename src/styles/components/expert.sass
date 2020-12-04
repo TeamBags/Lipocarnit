@@ -1,0 +1,165 @@
+.expert
+	position: relative
+	overflow: hidden
+	+rm(1220)
+		padding-top: 96px
+		padding-bottom: 50px
+	&__block
+		+rm(1024)
+	&__title
+		text-align: center
+		margin-bottom: 20px
+		+rm(1024)
+			margin-bottom: 30px
+		+rm(1220)
+			text-align: left
+			max-width: 40%
+			margin-bottom: 36px
+	&__desc
+		margin-bottom: 20px
+		+rm(1024)
+			max-width: 60%
+		+rm(1220)
+			max-width: 56%
+			margin-bottom: 44px
+	&__text
+		font-size: 16px
+		line-height: 1.2
+		color: $grey
+		&:not(:last-of-type)
+			margin-bottom: 12px
+		.text-bold
+			color: $dark-grey
+		+rm(768)
+			font-size: 17px
+			line-height: 24px
+		+rm(1220)
+			font-size: 18px
+			line-height: 23px
+			&:not(:last-of-type)
+				margin-bottom: 23px
+	&__clinical
+		margin-bottom: 20px
+		+rm(1024)
+			max-width: 60%
+		+rm(1220)
+			max-width: 62%
+			margin-bottom: 24px
+	&__photo
+		+rm(480)
+			position: absolute
+			bottom: -160px
+			width: 220px
+			right: calc(50% - 220px)
+		+rm(768)
+			bottom: 0
+			width: 280px
+			right: calc(50% - 360px)
+		+rm(1024)
+			width: 420px
+			right: calc(50% - 511px)
+		+rm(1220)
+			width: 500px
+			right: calc(50% - 667px)
+
+
+.clinical
+	&__wrap-img
+		margin-bottom: 10px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 17px
+			right: 0
+			height: 1px
+			background: #d6dfc6
+			width: calc(100% - 210px)
+		+rm(768)
+			&::before
+				width: calc(100% - 230px)
+		+rm(1220)
+			margin-bottom: 11px
+			&::before
+				top: 20px
+				width: calc(100% - 246px)
+	&__img
+		width: 200px
+		+rm(768)
+			width: 220px
+		+rm(1220)
+			width: 237px
+	&__text
+		font-style: italic
+		font-size: 16px
+		line-height: 1.2
+		color: $dark-grey
+		.green
+			white-space: nowrap
+			font-style: normal
+		+rm(768)
+			font-size: 17px
+			line-height: 24px
+			max-width: 60%
+		+rm(1024)
+			max-width: 100%
+
+
+
+
+.expert-info
+	text-align: center
+	+rm(480)
+		text-align: left
+		max-width: 50%
+	+rm(1024)
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		max-width: 100%
+	&__wrap
+		margin-bottom: 10px
+		+rm(1024)
+			margin-bottom: 0
+			margin-right: 20px
+		+rm(1220)
+			margin-right: 30px
+	&__name
+		color: #222222
+		font-size: 20px
+		margin-bottom: 3px
+		font-weight: 700
+		+rm(1220)
+			font-size: 22px
+	&__post
+		color: #666666
+		font-size: 16px
+		+rm(1220)
+			font-size: 18px
+	&__images
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 20px
+		+rm(480)
+			justify-content: flex-start
+		+rm(1220)
+			padding-top: 12px
+			margin-right: 77px
+	&__sign
+		+rm(1220)
+			margin-right: 21px
+	&__link
+		display: inline-block
+		text-decoration: none
+		color: $dark-grey
+		font-size: 16px
+		line-height: 18px
+		font-weight: 700
+		border-bottom: 2px dotted $dark-grey
+		transition: all .3s
+		&:hover
+			border-bottom: 2px dotted transparentize($dark-grey, .999)
+		+rm(1220)
+			font-size: 17px
