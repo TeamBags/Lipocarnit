@@ -1,0 +1,60 @@
+.process
+	&__title
+		text-align: center
+		margin-bottom: 52px
+	&__main
+		text-align: center
+		color: $dark-grey
+		font-size: 19px
+		line-height: 1.2
+		font-weight: 700
+	&__wrapper
+		margin-bottom: 20px
+		counter-reset: section
+
+.process-item
+	position: relative
+	&:first-of-type
+		margin-bottom: 40px
+		.process-item__top
+			background: url('../img/process_bg_1.jpg') no-repeat center
+			background-size: cover
+	&:last-of-type
+		.process-item__top
+			background: url('../img/process_bg_2.jpg') no-repeat center
+			background-size: cover
+	&__top
+		height: 90px
+		position: relative
+		font-size: 0
+		&::before
+			counter-increment: section
+			content: counter(section)
+			display: block
+			position: absolute
+			bottom: 10px
+			left: 10px
+			color: #fff
+			font-size: 30px
+			font-weight: 900
+			z-index: 1
+	&__img
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 160px
+	&__bottom
+		background-color: #ffffff
+		padding: 10px
+		color: $dark-grey
+	&__ttl
+		margin-bottom: 15px
+		font-size: 20px
+		line-height: 1.2
+		font-weight: 700
+	&__text
+		font-size: 16px
+		line-height: 1.2
+		&:not(:last-of-type)
+			margin-bottom: 10px
