@@ -1,7 +1,4 @@
-import "./helpers/postDate";
-// import openQuestion from "./modules/question";
-function main() {
-  function openQuestion() {
+function openQuestion() {
     let buttonOpenQuestion = document.querySelector(".question__button");
     let open = document.querySelector(".question__open");
     let close = document.querySelector(".question__close");
@@ -16,18 +13,3 @@ function main() {
     })
   }
   openQuestion()
-}
-
-if (document.documentElement.clientWidth < 480) {
-  window.addEventListener(
-    "scroll",
-    function () {
-      return setTimeout(main, 1000);
-    },
-    {
-      once: true,
-    }
-  );
-} else {
-  main();
-}

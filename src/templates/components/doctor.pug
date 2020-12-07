@@ -1,0 +1,28 @@
+section.doctor.block
+    .container.doctor__wrapper
+        picture
+            source(media="(max-width:1023px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==")
+            source(srcset="img/expert.webp", type="image/webp")
+            img.doctor__photo(src="img/expert.png", alt="expert")
+        ul.doctor__list.list-doc
+            li.list-doc__item.list-doc__item--1
+                span.list-doc__strong Для ускорения эффекта 
+                span придерживайтесь инструкции
+            li.list-doc__item 
+                span.list-doc__strong Для максимального эффекта 
+                span продолжайте курс даже после устранения симптомов 
+            li.list-doc__item 
+                span.list-doc__strong Для профилактики проблем 
+                span старайтесь правильно питаться и заниматься спортом
+        .doctor__info.info-doc
+            .info-doc__wrap
+                p.info-doc__name Василий Петров,
+                p.info-doc__post уролог, стаж 20 лет
+            .info-doc__img
+                picture
+                    source(srcset="img/sign.webp", type="image/webp")
+                    img(src="img/sign.png" alt="sign")
+                picture
+                    source(srcset="img/approved.webp", type="image/webp")
+                    img(src="img/approved.png" alt="approved")
+

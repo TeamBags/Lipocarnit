@@ -1,0 +1,41 @@
+.question.block
+    .container.question__wrapper
+        h2.question__title.title Нам задают вопросы:
+        ul.question__list.list-q
+            li.list-q__item
+                h4.list-q__title 1. Могу ли я худеть с зелёным чаем в натуральном виде?
+                p.list-q__text Да, но для этого необходимо ежедневно потреблять по 9 чашек качественного зелёного чая, хотя бы на протяжении 3х месяцев, совмещая прием с физическими нагрузками. Для сравнения, этот же эффект можно достигнуть при помощи курсового приема препарата Oxyslim.
+            li.list-q__item
+                h4.list-q__title 2. Не будет ли передозировки или привыкания? 
+                p.list-q__text Нет. Oxyslim не вызывает привыкания, поскольку для организма это как дополнительный витаминный комплекс, который помогает наладить нарушенные процессы - в данном случае переработку жировой ткани. Передозировки быть не может, если вы будете пить по инструкции.
+            li.list-q__item
+                h4.list-q__title 3. Сколько нужно Oxyslim на мой вес и рост?
+                p.list-q__text Для того, чтобы получить точный расчет и подробную рекомендацию, проконсультируйтесь со специалистом. Оставьте свой номер в любой из 
+                    a.list-q__link(href="#link-form") форм заказа 
+                    | на сайте, чтобы специалист связался с вами и проконсультировал.
+            li.list-q__item.list-q__item--vissible
+                h4.list-q__title 4. После окончания курса может ли вес вернуться?
+                p.list-q__text Скорее нет, чем да. Курс препарата Oxyslim нормализует обмен веществ, жировая ткань начнет активно перерабатывать, а также у вас нормализуется аппетит. Поэтому если вес и будет набираться, то медленно. Но мы все равно рекомендуем не усердствовать с жирной и вредной пищей.
+            li.list-q__item.list-q__item--vissible
+                h4.list-q__title 5. Я могу есть что захочу?
+                p.list-q__text Мы не можем вас заставить что-то не есть. И да, даже если вы будете есть тортики и булочки, Oxyslim будет помогать вам сжигать жир. Но всё же при сбалансированном питании эффект будет сильнее, и вы похудеете быстрее.
+            li.list-q__item.list-q__item--vissible
+                h4.list-q__title 6. Я могу совмещать со спортом?
+                p.list-q__text Конечно. Многие спортсмены используют Oxyslim в качестве добавки к спортивному питанию как эффективный жиросжигатель. Поэтому, если вы будете делать даже короткие пробежки, качать пресс дома или иногда ходить в спортзал — эффект вас удивит.
+        .question__button
+            span.question__open Другие вопросы
+            span.question__close Скрыть
+        picture
+           source(srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==", media="(min-width: 1024px)")
+           source(srcset="img/product.webp", type="image/webp", media="(min-width: 768px)")
+           source(srcset="img/product.png", media="(min-width: 768px)")
+           img.question__prod(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==", alt="product")
+        form#link-form.question__form.form-q.form.x_order_form(action="/submit" method="post")
+            h3.form-q__title Остались вопросы?
+            .form__wrap.form__wrap--name
+               input.form__input(type="text" name="name" required placeholder="Имя")
+            .form__wrap.form__wrap--phone
+               input.form__input(type="tel" name="phone" required placeholder="Телефон")
+            button.form__btn.btn
+                span.btn__big Заказать
+                span.btn__small со скидкой
