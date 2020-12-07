@@ -31,7 +31,6 @@
     color: #565655;
 
     .blue {
-      font-weight: 700;
       font-style: normal;
     }
   }
@@ -188,9 +187,9 @@
 
   &__year {
     position: absolute;
-    width: auto;
-    top: 5px;
-    left: 25px;
+    width: 180px;
+    top: 2px;
+    left: 23px;
 
     @include rm(640) {
       width: 142px;
@@ -216,7 +215,7 @@
     z-index: 1;
     right: 0;
     bottom: -20px;
-    width: 80px;
+    width: 90px;
 
     @include rm(768) {
       width: 105px;
@@ -230,7 +229,6 @@
   &__title {
     color: #2a2a2a;
     font-size: 20px;
-    font-weight: 900;
   }
 
   &__text {
