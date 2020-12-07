@@ -20,33 +20,33 @@ mixin review(review)
 	const reviewArray = [
 		{
 			src: 'review_1',
-			noteBefore: 'Было <span>85&nbsp;кг.</span>',
-			noteAfter: 'Стало <span>65&nbsp;кг.</span>',
-			name: '<span>Hanna,</span> 49 лет',
-			desc: 'Подтянулись бока, избавилась от второго подбородка',
-			text: 'Чтобы снова быть довольной своим телом мне хватило всего месяца, как раз успела к пляжному сезону. Препарат мне очень понравился, состав растительный, без риска подорвать себе здоровье. Мои подруги теперь мне не верят, что я столько сбросила без диеты, думают, что я кокетничаю. А я на самом деле весь этот месяц спокойно кушала булочки и пироженки) Когда на первой неделе начала замечать в зеркале, что становлюсь всё меньше, запереживала, что грудь тоже похудеет - но нет, осталась на месте, слава богу)'
+			noteBefore: 'Pesaba  <span>85&nbsp;kg.</span>',
+			noteAfter: 'Стало <span>65&nbsp;kg.</span>',
+			name: '<span>Hanna,</span> 49 años',
+			desc: 'Los lados se tensaron, se deshizo de la papada',
+			text: 'Solo me tomó un mes volver a ser feliz con mi cuerpo, justo a tiempo para la temporada de playa. Me gustó mucho la droga, la composición es a base de plantas, sin riesgo de minar mi salud. Mis amigos ahora no me creen que he perdido tanto sin dieta, piensan que estoy coqueteando. Y de hecho, todo este mes comí tranquilamente bollos y pasteles) Cuando en la primera semana comencé a notar en el espejo que me estaba haciendo más pequeña, me preocupaba que mis pechos también perdieran peso - pero no, me quedé en su lugar, gracias a Dios)'
 		},
 		{
 			src: 'review_2',
-			noteBefore: 'Было <span>79&nbsp;кг.</span>',
-			noteAfter: 'Стало <span>59&nbsp;кг.</span>',
-			name: '<span>Julia,</span> 38 лет',
-			desc: 'Талия стала тоньше, даже руки похудели',
-			text: 'За последние три года похудение для меня успело превратиться в хобби. Я перепробовала самые популярные диеты, приучила себя бегать по утрам. Но, знаете, я как была пышечкой, так и оставалась - просто время от времени диеты мне помогали превратиться в пышечку поменьше) а вот Lipocarnit - настоящая находка. За месячный курс я стройнела не по дням, а по часам) У меня наконец-то появилась талия, о которой я мечтала, теперь могу её подчеркивать. И даже руки тоньше стали!)'
+			noteBefore: 'Pesaba  <span>79&nbsp;kg.</span>',
+			noteAfter: 'Стало <span>59&nbsp;kg.</span>',
+			name: '<span>Julia,</span> 38 años',
+			desc: 'La cintura se volvió más delgada, incluso los brazos se volvieron más delgados',
+			text: 'Durante los últimos tres años, perder peso se ha convertido en un pasatiempo para mí. Probé las dietas más populares, me enseñé a correr por la mañana. Pero, ya sabes, como era una bola de masa, me quedé, es solo que de vez en cuando las dietas me ayudaban a convertirme en una bola de masa más pequeña), pero Oksislim es un verdadero hallazgo. Durante un mes, adelgacé a pasos agigantados) Finalmente obtuve la cintura con la que soñaba, ahora puedo enfatizarla. ¡E incluso las manos son más delgadas que el acero!)'
 		},
 		{
 			src: 'review_3',
-			noteBefore: 'Было <span>78&nbsp;кг.</span>',
-			noteAfter: 'Стало <span>61&nbsp;кг.</span>',
-			name: '<span>Mira,</span> 35 лет',
-			desc: 'Ягодицы и бедра подтянулись, живот больше не свисает',
-			text: 'Долгое время у меня были серьёзные проблемы с лишним весом. Со студенческих лет у меня сформировалась плохая привычка - все стрессовые ситуации заедать чем-то. Нервничаю во время сессии? - пошла покушала. Переживаю из-за отношений? - пошла покушала. Так я и не заметила, как начала стремительно набирать вес. Спасибо, Lipocarnitу, моя фигура начала возвращаться. Ягодицы и ляжки больше не висят, ещё чуть-чуть и смогу носить шортики. И живот из-под майки больше не висит.'
+			noteBefore: 'Pesaba  <span>78&nbsp;kg.</span>',
+			noteAfter: 'Стало <span>61&nbsp;kg.</span>',
+			name: '<span>Mira,</span> 35 años',
+			desc: 'Las nalgas y las caderas se tensan, el vientre ya no cuelga',
+			text: 'Durante mucho tiempo tuve serios problemas con el sobrepeso. Desde mis años de estudiante, he formado un mal hábito: aprovechar todas las situaciones estresantes con algo. ¿Nervioso durante una sesión? - Fui a comer. ¿Preocupado por una relación? - Fui a comer. Entonces no me di cuenta de cómo comencé a ganar peso rápidamente. Gracias, Oksislim, mi figura comenzó a regresar. Las nalgas y los muslos ya no cuelgan, solo un poco más y puedo usar pantalones cortos. Y el vientre de debajo de la camisa ya no cuelga.'
 		}
 	];
 
 section.reviews.block
 	.container
-		h2.reviews__title.title Наши клиенты хвастаются своим похудением
+		h2.reviews__title.title Nuestros clientes presumen de su pérdida de peso 
 		.reviews__slider.js-reviews-slider
 			each review in reviewArray
 				+review(review)

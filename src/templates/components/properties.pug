@@ -9,29 +9,29 @@ mixin property(property)
 	const propertyArray = [
 		{
 			src: 'property_1',
-			text: 'Снижение голода'
+			text: 'Reduce el hambre'
 		},
 		{
 			src: 'property_2',
-			text: 'Сжигание жировых отложений'
+			text: 'Quema de depósitos de grasa'
 		},
 		{
 			src: 'property_3',
-			text: 'Омолаживающий эффект'
+			text: 'Reduce el nivel de colesterol "malo"'
 		},
 		{
 			src: 'property_4',
-			text: 'Укрепление сердечно-сосудистой системы'
+			text: 'Reduce la cantidad de grasa en los órganos'
 		}
 	];
 
 
 section.properties.block
 	.container
-		h2.properties__title.title Катехин — основной компонент в зеленом чае, который помогает похудеть
+		h2.properties__title.title La insulina es un componente que se encuentra en la raíz de la achicoria y ayuda a perder peso.
 		.properties__wrapper
 			.properties__left
-				p.properties__desc.green Свойства катехина для похудения:
+				p.properties__desc.green Propiedades de la insulina para adelgazar: 
 				.properties__list
 					each property in propertyArray
 						+property(property)
