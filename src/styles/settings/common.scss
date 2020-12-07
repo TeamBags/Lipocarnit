@@ -192,3 +192,22 @@ br {
 .slick-slide {
   outline: none;
 }
+
+.label {
+  @include rm(1024) {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 364px;
+    height: 61px;
+    background: url("../img/label_arrow.png") no-repeat center,
+      url("../img/label.png") no-repeat center;
+  }
+}
+
+.ev-footer,
+.create_rom_footer {
+  padding-top: 100px;
+}

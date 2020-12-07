@@ -1,0 +1,41 @@
+.header__wrapper
+	.header__info
+		h1.header__title.blue Lipocarnit
+		p.header__desc шипучие таблетки для похудения
+		p.header__text.green Помощь при похудении	на основе катехинов зеленого чая и гуараны
+		ul.header__list.list-promo
+			li.list-promo__item Стимулирует сжигание жира
+			li.list-promo__item Уменьшает аппетит
+			li.list-promo__item Не дает поправляться во время еды
+		.header__medals.header__medals--mob.medals
+			.medals__wrap
+				picture
+					source(srcset="img/medal_1.webp", type="image/webp")
+					img.medals__img(src="img/medal_1.png", alt="medal")
+			.medals__wrap
+				picture
+					source(srcset="img/medal_2.webp", type="image/webp")
+					img.medals__img(src="img/medal_2.png", alt="medal")
+			.medals__wrap
+				picture
+					source(srcset="img/medal_3.webp", type="image/webp")
+					img.medals__img(src="img/medal_3.png", alt="medal")
+	.header__center
+		picture
+			source(srcset="img/product.webp", type="image/webp")
+			img.header__prod(src="img/product.png", alt="Lipocarnit")
+		.header__medals.header__medals--desc.medals
+			.medals__wrap
+				picture
+					source(srcset="img/medal_1.webp", type="image/webp")
+					img.medals__img(src="img/medal_1.png", alt="medal")
+			.medals__wrap
+				picture
+					source(srcset="img/medal_2.webp", type="image/webp")
+					img.medals__img(src="img/medal_2.png", alt="medal")
+			.medals__wrap
+				picture
+					source(srcset="img/medal_3.webp", type="image/webp")
+					img.medals__img(src="img/medal_3.png", alt="medal")
+	.header__form
+		include order-form

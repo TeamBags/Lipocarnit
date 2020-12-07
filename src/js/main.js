@@ -1,7 +1,9 @@
 import "./helpers/postDate";
 import Controls from "./modules/Controls";
-function main() { 
-  Controls.init()
+import Sliders from "./modules/Sliders";
+function main() {
+  Controls.init();
+  Sliders.init();
 }
 
 if (document.documentElement.clientWidth < 480) {
