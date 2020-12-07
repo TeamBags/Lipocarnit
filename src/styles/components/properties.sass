@@ -1,10 +1,5 @@
 .properties
-	padding-bottom: 10px
 	overflow: hidden
-	+rm(480)
-		padding-bottom: 15px
-	+rm(768)
-		padding-bottom: 25px
 	+rm(1024)
 		&.block
 			padding-top: 80px
@@ -67,10 +62,11 @@
 		+rm(1220)
 			max-width: 780px
 	&__right
-		max-width: 250px
+		max-width: 180px
 		width: 100%
+		margin: auto
+		text-align: center
 		position: relative
-		left: calc(50% - 85px)
 		&::before
 			content: ''
 			display: block
@@ -81,7 +77,7 @@
 			background-repeat: no-repeat
 			background-position: center
 			background-size: contain
-			left: 31%
+			left: 46%
 			transform: translateX(-50%)
 			z-index: -1
 		+rm(480)
@@ -90,17 +86,20 @@
 		+rm(1024)
 			position: relative
 			left: auto
-			max-width: 280px
+			margin: 0
+			max-width: 190px
 		+rm(1220)
 			position: absolute
-			bottom: -30px
-			right: -5px
-			max-width: 287px
+			bottom: 0px
+			right: 65px
+			max-width: 186px
 			&::before
 				width: 429px
 				height: 237px
 				top: -50px
 				left: 22%
+	&__prod
+		margin: auto
 	&__medal
 		position: absolute
 		top: -20px
@@ -136,6 +135,6 @@
 			margin-bottom: 32px
 	&__text
 		color: $dark-grey
-		font-weight: 500
+		font-weight: 700
 		font-size: 17px
 		line-height: 1.2

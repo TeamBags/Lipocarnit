@@ -3,9 +3,9 @@
   background-color: #efefef;
   z-index: 0;
   @include rm(1024) {
-      &.block {
+    &.block {
       padding: 35px 0;
-}
+    }
   }
   &__wrapper {
     @include rm(1024) {
@@ -19,7 +19,6 @@
 
   &__photo {
     @include rm(1024) {
-
       position: absolute;
       right: calc(50% + 254px);
       bottom: -37px;
@@ -31,7 +30,6 @@
       bottom: -81px;
     }
   }
-
 }
 
 .list-doc {
@@ -40,14 +38,12 @@
   color: #222222;
   border-bottom: 1px solid #d6dfc6;
 
-
   @include rm(640) {
     padding-bottom: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     text-align: center;
-
   }
 
   @include rm(768) {
@@ -61,12 +57,11 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 180px;
       height: 1;
       border-bottom: 1px solid #d6dfc6;
-      ;
       bottom: 0;
       left: 0;
       z-index: 0;
@@ -83,17 +78,16 @@
       text-indent: 0;
       padding-top: 35px;
     }
-  
+
     @include rm(1024) {
-        padding-top: 45px;
+      padding-top: 45px;
       &--1 {
         max-width: 210px;
       }
-
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 18px;
       height: 18px;
@@ -125,8 +119,7 @@
     }
   }
 
-  &__strong {   
-
+  &__strong {
     @include rm(768) {
       display: block;
     }
@@ -175,11 +168,9 @@
     margin-bottom: 15px;
 
     @include rm(1024) {
-      margin-right: 15px;
+      margin-right: 45px;
     }
-
   }
-
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .list-doc::before {

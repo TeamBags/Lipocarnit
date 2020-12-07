@@ -74,7 +74,7 @@ button {
 
   @include rm(1220) {
     font-size: 44px;
-    line-height: 44px;
+    line-height: 46px;
   }
 }
 
@@ -210,6 +210,6 @@ br {
 .ev-footer,
 .create_rom_footer {
   @include rm(1024) {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
