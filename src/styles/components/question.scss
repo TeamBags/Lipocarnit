@@ -48,10 +48,7 @@
   }
   &__button {
     text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
     color: #31363e;
-
     cursor: pointer;
     margin-bottom: 20px;
 
@@ -94,7 +91,6 @@
   &__title {
     color: #31363e;
     margin-bottom: 14px;
-    font-weight: 900;
   }
 
   &__text {
@@ -117,6 +113,7 @@
       overflow: hidden;
       opacity: 0;
       transition: all 0.3s ease-out;
+      margin-bottom: 0 !important;
     }
 
     &--vissible.active {
@@ -124,6 +121,7 @@
       animation: fade-in 1s;
       max-height: 100%;
       opacity: 1;
+      margin-bottom: 24px !important;
     }
   }
   &__link {
@@ -144,7 +142,6 @@
 
 .form-q {
   &__title {
-    font-weight: 900;
     color: #31363e;
     font-size: 36px;
     margin-bottom: 25px;
