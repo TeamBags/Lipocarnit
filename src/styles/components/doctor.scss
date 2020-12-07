@@ -83,7 +83,7 @@
       text-indent: 0;
       padding-top: 35px;
     }
-
+  
     @include rm(1024) {
         padding-top: 45px;
       &--1 {
@@ -139,7 +139,7 @@
   @include rm(480) {
     display: flex;
     text-align: left;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   @include rm(1024) {
@@ -180,4 +180,9 @@
 
   }
 
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .list-doc::before {
+    content: none !important;
+  }
 }
