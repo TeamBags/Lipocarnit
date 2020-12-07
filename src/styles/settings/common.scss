@@ -209,5 +209,7 @@ br {
 
 .ev-footer,
 .create_rom_footer {
-  padding-top: 100px;
+  @include rm(1024) {
+    padding-top: 100px;
+  }
 }
