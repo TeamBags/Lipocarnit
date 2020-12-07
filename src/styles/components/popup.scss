@@ -1,0 +1,37 @@
+.popup {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 31px 0px 30px 35px;
+  display: flex !important;
+
+  &__wrapper {
+    margin-right: 29px;
+    width: 266px;
+  }
+
+  &__img {
+
+    display: none;
+
+    @include rm(1000) {
+      width: 286px;
+      display: block;
+      position: relative;
+      left: 20px;
+    }
+  }
+  .blue {
+    font-size: 40px;
+  }
+  &__title {
+    color: #343434;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  &__form {
+    margin-bottom: 40px;
+  }
+  &__security {
+    justify-content: center;
+  }
+}

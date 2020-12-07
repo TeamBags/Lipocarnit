@@ -1,159 +1,241 @@
 .recommend {
-    &__title {
-      text-align: center;
-      margin-bottom: 20px;
-  
-      @include rm(480) {
-        margin-bottom: 25px;
-      }
-  
-      @include rm(768) {
-        margin-bottom: 30px;
-      }
-  
-      @include rm(1024) {
-        margin-bottom: 40px;
-      }
-  
-      @include rm(1220) {
-        margin-bottom: 45px;
-      }
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include rm(480) {
+      margin-bottom: 25px;
     }
-  
-    @include rm(1220) {
-      padding-top: 101px;
-      padding-bottom: 75px;
-    }  
-  
-  
-  }
-  
-  .list-rec {
-    margin-bottom: 25px;
-  
-    @include rm(640) {
-      margin-bottom: 30px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
+
     @include rm(768) {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
-  
+
     @include rm(1024) {
-      margin-bottom: 45px;
+      margin-bottom: 40px;
     }
-  
+
     @include rm(1220) {
       margin-bottom: 50px;
     }
-  
-    &__item {
-      text-align: center;
-      max-width: 270px;
-      margin: 0 auto;
-      position: relative;
-  
-      @include rm(640) {
-        width: 32%;
-      }
-  
-  
-  
-      &:not(:last-child) {
-        margin-bottom: 25px;
-  
-        @include rm(640) {
-          margin-bottom: 0;
-  
-        }
-  
-        @include rm(1024) {
-          &::before {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 22px;
-            background: url(../img/arrow_black.png);
-            top: 125px;
-            right: -34px;
-            z-index: 1;
-          }
-  
-          &::after {
-            content: '';
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            border: 4px solid #8bbd0e;
-            background-color: #fff;
-            box-shadow: 0px 0px 0px 4px #cdea93;
-            top: 125px;
-            right: -42px;
-            z-index: 0;
-          }
-        }
-  
-        @include rm(1220) {
-          &::after {
-            right: -77px;
-          }
-          &::before {
-              right: -69px;
-          }
-  
-        }
-      }
-  
+  }
+
+  @include rm(1220) {
+    padding-top: 105px;
+    padding-bottom: 85px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #565655;
+
+    .blue {
+      font-weight: 700;
+      font-style: normal;
     }
-  
-    &__img {
-      background-color: #fff;
+  }
+
+}
+
+.list-rec {
+  margin-bottom: 25px;
+
+  @include rm(640) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include rm(768) {
+    margin-bottom: 35px;
+  }
+
+  @include rm(1024) {
+    margin-bottom: 45px;
+  }
+
+  @include rm(1220) {
+    margin-bottom: 55px;
+  }
+
+  &__item {
+    text-align: center;
+    position: relative;
+
+    @include rm(640) {
+      width: 32%;
+    }
+
+
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @include rm(640) {
+        margin-bottom: 0;
+
+      }
+
+      @include rm(1024) {
+        &::before {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 22px;
+          background: url(../img/arrow_black.png);
+          top: 125px;
+          right: -20px;
+          z-index: 1;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          border: 4px solid #8bbd0e;
+          background-color: #fff;
+          box-shadow: 0px 0px 0px 4px #cdea93;
+          top: 125px;
+          right: -27px;
+          z-index: 0;
+        }
+      }
+
+
+    }
+
+  }
+
+  &__img {
+    background-color: #fff;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    position: relative;
+
+    @include rm(640) {
+      width: 180px;
+      height: 180px;
+
+    }
+
+    @include rm(768) {
       width: 230px;
       height: 230px;
-      border-radius: 50%;
-      margin: 0 auto 15px;
-  
-      @include rm(640) {
-        width: 180px;
-        height: 180px;
-  
-      }
-  
-      @include rm(768) {
-        width: 230px;
-        height: 230px;
-        margin: 0 auto 30px;
-      }
-  
-      @include rm(1024) {
-        width: 270px;
-        height: 270px;
-        margin: 0 auto 35px;
-  
-      }
-  
-      @include rm(1220) {
-        margin: 0 auto 40px;
-  
-      }  
+      margin: 0 auto 30px;
+    }
 
-  
+    @include rm(1024) {
+      width: 270px;
+      height: 270px;
+      margin: 0 auto 35px;
+
     }
-  
-    &__title {
-      color: #2a2a2a;
-      font-size: 20px;
-      font-weight: 900;
-      margin-bottom: 10px;
+
+    @include rm(1220) {
+      margin: 0 auto 40px;
+
     }
-  
-    &__text {
-      font-size: 16px;
-      color: #49424c;
-    }
-  
+
+
   }
-  
+
+  &__clock {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    @include rm(640) {
+      width: 154px;
+    }
+
+    @include rm(768) {
+      width: 200px;
+    }
+
+    @include rm(1024) {
+      width: auto;
+      top: 34px;
+      left: 34px;
+    }
+  }
+
+  &__glass {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 183px;
+
+    @include rm(640) {
+      width: 138px;
+    }
+
+    @include rm(768) {
+      top: 5px;
+      left: 35px;
+      width: 180px;
+    }
+
+    @include rm(1024) {
+      width: auto;
+    }
+  }
+
+  &__year {
+    position: absolute;
+    width: auto;
+    top: 5px;
+    left: 25px;
+
+    @include rm(640) {
+      width: 142px;
+      left: 18px;
+      top: 2px;
+    }
+
+    @include rm(768) {
+      width: 180px;
+      left: 23px;
+      top: 2px;
+    }
+
+    @include rm(1024) {
+      width: auto;
+      top: 5px;
+      left: 25px;
+    }
+  }
+
+  &__product {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -20px;
+    width: 80px;
+
+    @include rm(768) {
+      width: 105px;
+    }
+
+    @include rm(1024) {
+      width: 123px;
+    }
+  }
+
+  &__title {
+    color: #2a2a2a;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #49424c;
+  }
+
+}
