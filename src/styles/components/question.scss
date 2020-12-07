@@ -6,7 +6,7 @@
     text-align: center;
     margin-bottom: 25px;
     @include rm(1024) {
-margin-bottom: 40px;
+      margin-bottom: 40px;
     }
   }
 
@@ -19,23 +19,21 @@ margin-bottom: 40px;
 
     @include rm(768) {
       margin: 0;
-
     }
     @include rm(1024) {
-margin-top: -40px;
-margin-bottom: 18px;
+      margin-top: -40px;
+      margin-bottom: 18px;
     }
 
     .form__input {
       background-color: #fff;
     }
-
   }
-&__prod {
-  @include rm(1024) {
-display: none;
+  &__prod {
+    @include rm(1024) {
+      display: none;
+    }
   }
-}
   &__wrapper {
     @include rm(768) {
       display: flex;
@@ -46,7 +44,6 @@ display: none;
     }
     @include rm(1024) {
       align-items: flex-start;
-
     }
   }
   &__button {
@@ -57,7 +54,6 @@ display: none;
 
     @include rm(768) {
       width: 100%;
-
     }
 
     @include rm(1024) {
@@ -72,7 +68,6 @@ display: none;
   }
   &__open {
     display: inline-block;
-
   }
   &__open.active {
     display: none;
@@ -104,7 +99,6 @@ display: none;
   }
 
   &__item {
-
     &:not(:last-child) {
       margin-bottom: 24px;
     }
@@ -112,7 +106,7 @@ display: none;
       margin-bottom: 0;
     }
     &:nth-child(4).active {
-      margin-top: 24px
+      margin-top: 24px;
     }
     &--vissible {
       max-height: 0;
@@ -123,21 +117,28 @@ display: none;
     }
 
     &--vissible.active {
+      display: block;
+      animation: fade-in 1s;
       max-height: 100%;
       opacity: 1;
       margin-bottom: 24px !important;
-
     }
   }
-&__link {
-  color: #31363e;
-  border-bottom: 2px dotted #31363e;
+  &__link {
+    color: #31363e;
+    border-bottom: 2px dotted #31363e;
+  }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 
-
+  to {
+    opacity: 1;
+  }
 }
-
 
 .form-q {
   &__title {

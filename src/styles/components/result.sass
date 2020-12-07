@@ -1,0 +1,244 @@
+.result
+	overflow: hidden
+	+rm(1220)
+		padding-top: 76px
+		padding-bottom: 118px
+	&__title
+		margin-bottom: 5px
+		text-align: center
+		+rm(1220)
+			margin-bottom: 12px
+	&__desc
+		text-align: center
+		font-size: 18px
+		margin-bottom: 20px
+		color: $dark-grey
+		+rm(1024)
+			font-size: 20px
+			margin-bottom: 30px
+		+rm(1220)
+			font-size: 22px
+			line-height: 24px
+			margin-bottom: 66px
+	&__table
+		width: 300px
+		margin: auto
+		margin-bottom: 20px
+		+rm(640)
+			width: 480px
+		+rm(768)
+			width: 480+180px
+		+rm(1024)
+			width: 100%
+			margin-bottom: 30px
+		+rm(1220)
+			margin-bottom: 44px
+	&__main
+		text-align: center
+		color: $dark-grey
+		font-size: 19px
+		line-height: 1.2
+		font-weight: 700
+		margin-bottom: 20px
+		span
+			white-space: nowrap
+		+rm(480)
+			font-size: 21px
+		+rm(640)
+			font-size: 23px
+		+rm(768)
+			font-size: 25px
+		+rm(1024)
+			font-size: 28px
+			margin-bottom: 30px
+		+rm(1220)
+			max-width: 78%
+			width: 100%
+			margin: auto
+			margin-bottom: 33px
+	&__form
+		box-shadow: 0 14px 46px #d9d9d9
+		background-color: #ffffff
+		width: 270px
+		margin: auto
+		padding: 15px
+		.btn__big
+			font-size: 22px
+		+rm(1024)
+			display: flex
+			box-shadow: none
+			background: none
+			width: 100%
+			padding: 0
+		+rm(1220)
+			justify-content: center
+			align-items: center
+			.btn__big
+				font-size: 24px
+				padding: 4px 10px
+		.form-q__title
+			font-size: 25px
+			+rm(1024)
+				margin-bottom: 0
+				margin-right: 20px
+				font-size: 28px
+				text-align: left
+			+rm(1220)
+				font-size: 36px
+				margin-right: 40px
+				max-width: 170px
+		.form
+			&__wrap
+				+rm(1024)
+					margin-bottom: 0
+					margin-right: 15px
+				+rm(1220)
+					width: 226px
+					flex-shrink: 0
+					margin-right: 30px
+			&__input
+				+rm(1024)
+					background: none
+			&__btn
+				+rm(1220)
+					width: 326px
+					font-size: 24px
+	.slick-arrow
+		position: absolute
+		border: none
+		cursor: pointer
+		top: 70px
+		outline: 0
+		z-index: 1
+		background: none
+		font-size: 0
+		overflow: visible
+		padding: 0
+		width: 22px
+		height: 22px
+		border-radius: 50%
+		border: 4px solid #8bbd0e
+		background-color: #fff
+		box-shadow: 0px 0px 0px 4px #cdea93
+		&::before
+			content: ''
+			position: absolute
+			width: 24px
+			height: 22px
+			background: url(../img/arrow_black.png)
+			top: -4px
+			opacity: 1
+			z-index: 1
+			transition: all .3s
+		&.slick-next
+			right: 0px
+			&::before
+				right: 6px
+		&.slick-prev
+			left: 0px
+			&::before
+				transform: scaleX(-1.1)
+				left: 6px
+		&:hover
+			&.slick-next
+				&::before
+					right: 4px
+			&.slick-prev
+				&::before
+					left: 4px
+
+.table
+	border: 1px solid #d6dfc6
+	display: flex
+	align-items: flex-start
+	&__col
+		text-align: center
+		width: 120px
+		&:not(:last-of-type)
+			.table
+				&__cell
+					border-right: 1px solid #d6dfc6
+					&:nth-of-type(2),
+					&:nth-of-type(8)
+						border-right: none
+						position: relative
+						&::before
+							content: ''
+							display: block
+							position: absolute
+							width: 1px
+							background: #d6dfc6
+							height: 28px
+							right: 0
+					&:nth-of-type(2)
+						&::before
+							bottom: 0
+							+rm(1220)
+								height: 50px
+					&:nth-of-type(8)
+						&::before
+							top: 0
+							+rm(1220)
+								height: 39px
+				&__cell--result
+					border-right: none
+					.table__text
+						border-right: 1px solid #94b458
+		+rm(1024)
+			width: calc(100%/5)
+	&__wrap
+		width: calc(100% - 120px)
+		.table__col
+			width: 180px
+		+rm(1024)
+			display: flex
+			align-items: flex-start
+			flex: 1
+			.table__col
+				width: calc(100%/5)
+	&__cell
+		padding: 10px 0
+		min-height: 38px
+		&:nth-of-type(3),
+		&:nth-of-type(5),
+		&:nth-of-type(7)
+			background-color: #f6f6f6
+		+rm(1220)
+			padding: 21px 0
+		&--title
+			border-bottom: 1px solid #d6dfc6
+			font-size: 16px
+			min-height: 70px
+			display: flex
+			align-items: center
+			justify-content: center
+			.table__text
+				color: $grey
+				font-weight: 700
+				width: 100%
+			+rm(1220)
+				font-size: 18px
+				line-height: 24px
+				padding: 27px 0
+				min-height: 127px
+		&--note
+			font-weight: 700
+			font-size: 18px
+			+rm(1220)
+				font-size: 20px
+				padding: 27px 0
+		&--num
+			color: $dark-grey
+			font-weight: 700
+			font-size: 16px
+			+rm(1220)
+				font-size: 18px
+		&--result
+			color: $dark-grey
+			font-size: 18px
+			font-weight: 700
+			padding: 15px 0
+			background-color: #f6f6f6
+			+rm(1220)
+				font-size: 20px
+				padding: 35px 0

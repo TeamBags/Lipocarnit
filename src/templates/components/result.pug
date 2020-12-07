@@ -1,0 +1,145 @@
+section.result.block
+	.container
+		h2.result__title.title Результаты похудения наших клиентов
+		p.result__desc на основе опроса после проведения месячного курса
+		.result__table.table
+			.table__col
+				.table__cell.table__cell--title
+					p.table__text Период
+						br
+						| наблюдения
+				.table__cell.table__cell--note.green
+					p.table__text Месяц
+				.table__cell.table__cell--num
+					p.table__text 1
+				.table__cell.table__cell--num
+					p.table__text 2
+				.table__cell.table__cell--num
+					p.table__text 3
+				.table__cell.table__cell--num
+					p.table__text 4
+				.table__cell.table__cell--num
+					p.table__text 5
+				.table__cell.table__cell--num
+					p.table__text 6
+				.table__cell.table__cell--result
+					p.table__text Итого
+			.table__wrap.js-table-slider
+				.table__col
+					.table__cell.table__cell--title
+						p.table__text Женщины
+							br
+							| 60-70 кг
+					.table__cell.table__cell--note.green
+						p.table__text Снижение веса
+					.table__cell
+						p.table__text на 4 кг
+					.table__cell
+						p.table__text на 3 кг
+					.table__cell
+						p.table__text на 3 кг
+					.table__cell
+						p.table__text на 2 кг
+					.table__cell
+						p.table__text на 2 кг
+					.table__cell
+						p.table__text на 1 кг
+					.table__cell.table__cell--result
+						p.table__text - 15 кг
+				.table__col
+					.table__cell.table__cell--title
+						p.table__text Женщины
+							br
+							| 70-80 кг
+					.table__cell.table__cell--note.green
+						p.table__text Снижение веса
+					.table__cell
+						p.table__text на 7 кг
+					.table__cell
+						p.table__text на 5 кг
+					.table__cell
+						p.table__text на 5 кг
+					.table__cell
+						p.table__text на 3 кг
+					.table__cell
+						p.table__text на 2 кг
+					.table__cell
+						p.table__text на 1 кг
+					.table__cell.table__cell--result
+						p.table__text - 23кг
+				.table__col
+					.table__cell.table__cell--title
+						p.table__text Мужчины
+							br
+							| и женщины
+							br
+							| 80-100 кг
+					.table__cell.table__cell--note.green
+						p.table__text Снижение веса
+					.table__cell
+						p.table__text на 8 кг
+					.table__cell
+						p.table__text на 6 кг
+					.table__cell
+						p.table__text на 6 кг
+					.table__cell
+						p.table__text на 5 кг
+					.table__cell
+						p.table__text на 4 кг
+					.table__cell
+						p.table__text на 2 кг
+					.table__cell.table__cell--result
+						p.table__text - 31 кг
+				.table__col
+					.table__cell.table__cell--title
+						p.table__text Мужчины
+							br
+							| 100-160 кг
+					.table__cell.table__cell--note.green
+						p.table__text Снижение веса
+					.table__cell
+						p.table__text на 10 кг
+					.table__cell
+						p.table__text на 8 кг
+					.table__cell
+						p.table__text на 8 кг
+					.table__cell
+						p.table__text на 6 кг
+					.table__cell
+						p.table__text на 4 кг
+					.table__cell
+						p.table__text на 3 кг
+					.table__cell.table__cell--result
+						p.table__text - 39 кг
+				.table__col
+					.table__cell.table__cell--title
+						p.table__text Женщины
+							br
+							| 100-160 кг
+					.table__cell.table__cell--note.green
+						p.table__text Снижение веса
+					.table__cell
+						p.table__text на 10 кг
+					.table__cell
+						p.table__text на 9 кг
+					.table__cell
+						p.table__text на 9 кг
+					.table__cell
+						p.table__text на 7 кг
+					.table__cell
+						p.table__text на 3 кг
+					.table__cell
+						p.table__text на 2 кг
+					.table__cell.table__cell--result
+						p.table__text - 40 кг
+
+		p.result__main Наш специалист свяжется с вами, чтобы проконсультировать и&nbsp;помочь подобрать 
+			span.green индивидуальный курс
+		form.result__form.form-q.form.x_order_form(action="/submit" method="post")
+				h3.form-q__title Остались вопросы?
+				.form__wrap.form__wrap--name
+						input.form__input(type="text" name="name" required placeholder="Имя")
+				.form__wrap.form__wrap--phone
+						input.form__input(type="tel" name="phone" required placeholder="Телефон")
+				button.form__btn.btn
+						span.btn__big Получить консультацию

@@ -33,7 +33,6 @@
       font-style: normal;      
     }
   }
-
 }
 
 .list-order {
@@ -67,19 +66,16 @@
       width: 32%;
     }
 
-
-
     &:not(:last-child) {
       margin-bottom: 25px;
 
       @include rm(640) {
         margin-bottom: 0;
-
       }
 
       @include rm(1024) {
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           width: 24px;
           height: 22px;
@@ -90,7 +86,7 @@
         }
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           width: 22px;
           height: 22px;
@@ -109,12 +105,10 @@
           right: -77px;
         }
         &::before {
-            right: -69px;
+          right: -69px;
         }
-
       }
     }
-
   }
 
   &__img {
@@ -127,7 +121,6 @@
     @include rm(640) {
       width: 180px;
       height: 180px;
-
     }
 
     @include rm(768) {
@@ -140,12 +133,10 @@
       width: 270px;
       height: 270px;
       margin: 0 auto 35px;
-
     }
 
     @include rm(1220) {
       margin: 0 auto 40px;
-
     }
 
     &--form {
@@ -164,7 +155,6 @@
       background-repeat: no-repeat;
       background-position: 80% 100%;
     }
-
   }
 
   &__title {
@@ -177,5 +167,4 @@
     font-size: 16px;
     color: #49424c;
   }
-
 }
