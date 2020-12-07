@@ -1,20 +1,36 @@
 section.recommend.block.bg
 	.container.recommend__wrapper
-		h2.recommend__title.title Как заказать оригинальный 
-			span.blue LIPOCARNIT
+		h2.recommend__title.title Как принимать 
+			span.blue LIPOCARNIT 
+			| для избавления от&nbsp;лишнего&nbsp;вес
 		ul.recommend__list-rec.list-rec
 			li.list-rec__item
-				.list-rec__img.list-rec__img--form
+				.list-rec__img
+					picture
+						source(srcset="img/glass.webp", type="image/webp")
+						img.list-rec__glass(src="img/glass.png", alt="glass")
 				h4.list-rec__title Расстворите 1 таблетку
 					br
 					| в 200 мл воды
 			li.list-rec__item
-				.list-rec__img.list-rec__img--operator
+				.list-rec__img
+					picture
+						source(srcset="img/clock.webp", type="image/webp")
+						img.list-rec__clock(src="img/clock.png", alt="clock")
 				h4.list-rec__title Суточная доза —
 					br
 					| 1 таблетка
 			li.list-rec__item
-				.list-rec__img.list-rec__img--prod
-				h4.list-rec__title Рекомендуемый курс применения —
+				.list-rec__img
+					picture
+						source(srcset="img/year.webp", type="image/webp")
+						img.list-rec__year(src="img/year.png", alt="glass")
+					picture
+						source(srcset="img/product.webp", type="image/webp")
+						img.list-rec__product(src="img/product.png", alt="product")
+				h4.list-rec__title Рекомендуемый курс 
 					br
-					|1 месяц
+					|применения — 1 месяц
+		p.recommend__subtitle *поскольку жиросжигатель 
+			span.blue LIPOCARNIT 
+			| имеет сильный эффект, нельзя пить больше, чем указано в инструкции
