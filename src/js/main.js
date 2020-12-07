@@ -1,6 +1,9 @@
 import "./helpers/postDate";
+import Sliders from "./modules/Sliders";
 
-function main() {}
+function main() {
+  Sliders.init();
+}
 
 if (document.documentElement.clientWidth < 480) {
   window.addEventListener(

@@ -1,0 +1,98 @@
+.reviews
+	background-color: #efefef
+	&__title
+		text-align: center
+		margin-bottom: 20px
+
+.review
+	&__photos
+		position: relative
+		margin-bottom: 20px
+	&__notes
+		display: flex
+		align-items: center
+		position: absolute
+		bottom: 0
+		transform: translateY(50%)
+		width: 100%
+	&__note-wrap
+		width: 50%
+		text-align: center
+		
+		&--before
+			.review__note
+				background-color: #d6dfc6
+		&--after
+			.review__note
+				background-color: #8bbd0e
+	&__note
+		color: #2a2a2a
+		font-size: 18px
+		white-space: nowrap
+		width: 100px
+		margin: auto
+		padding: 2px
+		span
+			font-size: 16px
+			font-weight: 900
+	&__info
+		max-height: 177px
+		overflow: hidden
+		margin-bottom: 10px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			background: linear-gradient(0deg, rgba(239,239,239,1) 0%, rgba(255,255,255,0) 71%)
+			height: 70px
+		&.active
+			max-width: 1000px
+			overflow: visible
+			&::before
+				display: none
+			~.review__btn
+				&::after
+					display: none
+	&__name
+		color: #31363e
+		font-size: 16px
+		margin-bottom: 5px
+		span
+			font-weight: 900
+			font-size: 18px
+	&__desc
+		font-size: 18px
+		margin-bottom: 15px
+	&__text
+		color: #31363e
+		font-size: 17px
+		line-height: 1.2
+	&__btn
+		background: $green
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		position: relative
+		margin: auto
+		cursor: pointer
+		transition: all .3s
+		&:hover
+			background: #749b10
+		&::before, &::after
+			content: ''
+			display: block
+			position: absolute
+			background: white
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&::before
+			width: 16px
+			height: 1px
+		&::after
+			height: 16px
+			width: 1px
