@@ -1,0 +1,161 @@
+.question {
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  &__title {
+    text-align: center;
+    margin-bottom: 25px;
+    @include rm(1024) {
+margin-bottom: 40px;
+    }
+  }
+
+  &__form {
+    box-shadow: 0 14px 46px #d9d9d9;
+    background-color: #ffffff;
+    width: 270px;
+    margin: 0 auto;
+    padding: 32px 22px 53px;
+
+    @include rm(768) {
+      margin: 0;
+
+    }
+    @include rm(1024) {
+margin-top: -40px;
+margin-bottom: 18px;
+    }
+
+    .form__input {
+      background-color: #fff;
+    }
+
+  }
+&__prod {
+  @include rm(1024) {
+display: none;
+  }
+}
+  &__wrapper {
+    @include rm(768) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-around;
+      align-items: center;
+    }
+    @include rm(1024) {
+      align-items: flex-start;
+
+    }
+  }
+  &__button {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #31363e;
+
+
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    @include rm(768) {
+      width: 100%;
+
+    }
+
+    @include rm(1024) {
+      width: 100%;
+      margin-bottom: 0;
+      order: 1;
+    }
+
+    span {
+      border-bottom: 2px dotted #31363e;
+    }
+  }
+  &__open {
+    display: inline-block;
+
+  }
+  &__open.active {
+    display: none;
+  }
+  &__close {
+    display: none;
+  }
+
+  &__close.active {
+    display: inline-block;
+  }
+}
+
+.list-q {
+  margin-bottom: 25px;
+
+  @include rm(1024) {
+    width: calc(100% - 304px);
+  }
+
+  &__title {
+    color: #31363e;
+    margin-bottom: 14px;
+    font-weight: 900;
+  }
+
+  &__text {
+    font-size: 17px;
+    color: #77880f;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+    &:nth-child(4).active {
+      margin-top: 24px
+    }
+    &--vissible {
+      display: none;
+    }
+
+    &--vissible.active {
+      display: block;
+      animation: fade-in 1s;
+
+    }
+  }
+&__link {
+  color: #31363e;
+  border-bottom: 2px dotted #31363e;
+}
+
+
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+
+.form-q {
+  &__title {
+    font-weight: 900;
+    color: #31363e;
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
