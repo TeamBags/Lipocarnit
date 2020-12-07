@@ -11,7 +11,7 @@
 	}
 
 	&__subtitle {
-		font-size: 24px;
+		font-size: 22px;
 		text-align: center;
 		color: #31363e;
 		@include rm(480) {
@@ -31,7 +31,7 @@
 .images {
 	position: relative;
 	max-width: 320px;
-    height: 420px;
+    height: 384px;
 	overflow: hidden;
 	margin: 0 auto 25px;
 	@include rm(640) {
