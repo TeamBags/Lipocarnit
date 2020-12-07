@@ -69,15 +69,15 @@ const Sliders = (function () {
       });
     },
     init: function () {
-      $(window).on("load resize", function () {
-        if ($(window).width() < 1024) {
-          Sliders.initMobileReviewSlider();
-          Sliders.initMobileTableSlider();
-        } else {
-          Sliders.destroyReviewSlider();
-          Sliders.destroyTableSlider();
-        }
-      });
+      // $(window).on("load resize", function () {
+      //   if ($(window).width() < 1024) {
+      //     Sliders.initMobileReviewSlider();
+      //     Sliders.initMobileTableSlider();
+      //   } else {
+      //     Sliders.destroyReviewSlider();
+      //     Sliders.destroyTableSlider();
+      //   }
+      // });
       Sliders.showInfoReview();
     },
   };
