@@ -2,8 +2,8 @@ import "./helpers/postDate";
 import Sliders from "./modules/Sliders";
 // import openQuestion from "./modules/question";
 
-Sliders.init();
 function main() {
+  Sliders.init();
   function openQuestion() {
     let buttonOpenQuestion = document.querySelector(".question__button");
     let open = document.querySelector(".question__open");

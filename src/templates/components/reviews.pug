@@ -10,11 +10,11 @@ mixin review(review)
 						p.review__note!=review.noteBefore
 					.review__note-wrap.review__note-wrap--after
 						p.review__note!=review.noteAfter
-		.review__info
+		.review__info.js-info-review
 			p.review__name!=review.name
 			p.review__desc.green!=review.desc
 			p.review__text!=review.text
-		.review__btn
+		.review__btn.js-btn-review
 
 -
 	const reviewArray = [
