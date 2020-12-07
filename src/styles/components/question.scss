@@ -19,6 +19,7 @@
 
     @include rm(768) {
       margin: 0;
+      padding: 32px 22px 53px;
     }
     @include rm(1024) {
       margin-top: -40px;
