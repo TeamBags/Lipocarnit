@@ -79,7 +79,7 @@
 				font-size: 24px
 				padding: 4px 10px
 		.form-q__title
-			font-size: 25px
+			font-size: 22px
 			font-weight: 700
 			+rm(1024)
 				margin-bottom: 0
@@ -112,38 +112,39 @@
 		position: absolute
 		border: none
 		cursor: pointer
-		top: 70px
+		top: 77.5px
 		outline: 0
 		z-index: 1
 		background: none
 		font-size: 0
 		overflow: visible
 		padding: 0
-		width: 22px
-		height: 22px
+		width: 19px
+		height: 19px
 		border-radius: 50%
-		border: 4px solid #8bbd0e
+		border: 3px solid #8bbd0e
 		background-color: #fff
-		box-shadow: 0px 0px 0px 4px #cdea93
+		box-shadow: 0px 0px 0px 3px #cdea93
 		&::before
 			content: ''
 			position: absolute
-			width: 24px
-			height: 22px
+			width: 20px
+			height: 18px
 			background: url(../img/arrow_black.png)
-			top: -4px
+			background-size: 100%
+			top: -3px
 			opacity: 1
 			z-index: 1
 			transition: all .3s
 		&.slick-next
 			right: 0px
 			&::before
-				right: 6px
+				right: 4px
 		&.slick-prev
 			left: 0px
 			&::before
 				transform: scaleX(-1.1)
-				left: 6px
+				left: 4px
 		&:hover
 			&.slick-next
 				&::before
