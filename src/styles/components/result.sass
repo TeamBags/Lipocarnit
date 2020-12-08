@@ -156,6 +156,27 @@
 	border: 1px solid #d6dfc6
 	display: flex
 	align-items: flex-start
+	position: relative
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 31px
+		left: 102px
+		width: 18px
+		height: 18px
+		border-radius: 50%
+		border: 4px solid #accf6a
+		background-color: #ffffff
+		box-shadow: 0 0 0 4px #cdea93, 0 0 0 8px #ffffff
+		margin: 8px
+	+rm(1024)
+		&::after
+			left: 488px
+	+rm(1220)
+		&::after
+			left: 590px
+			bottom: 77px
 	&__col
 		text-align: center
 		width: 120px

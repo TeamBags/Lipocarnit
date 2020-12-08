@@ -112,6 +112,7 @@ br {
   }
   @include rm(1024) {
     background-position-x: center;
+    background-size: auto;
   }
 }
 
