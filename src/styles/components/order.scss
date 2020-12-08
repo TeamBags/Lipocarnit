@@ -119,11 +119,12 @@
     width: 230px;
     height: 230px;
     border-radius: 50%;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
 
     @include rm(640) {
       width: 180px;
       height: 180px;
+      margin: 0 auto 15px;
     }
 
     @include rm(768) {

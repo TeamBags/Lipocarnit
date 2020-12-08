@@ -217,7 +217,10 @@
 
   &__title {
     color: #2a2a2a;
-    font-size: 20px;
+    font-size: 18px;
+    @include rm(768) {
+      font-size: 20px;
+    }
   }
 
   &__text {

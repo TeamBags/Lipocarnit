@@ -1,12 +1,16 @@
 .popup {
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 31px 0px 30px 35px;
   display: flex !important;
-
+  padding: 15px;
+  @include rm(1000) {
+    padding: 30px;
+  }
   &__wrapper {
-    margin-right: 29px;
     width: 266px;
+    @include rm(1000) {
+      margin-right: 29px;
+    }
   }
 
   &__img {
@@ -15,8 +19,6 @@
     @include rm(1000) {
       width: 196px;
       display: block;
-      position: relative;
-      left: 30px;
     }
   }
   .blue {
