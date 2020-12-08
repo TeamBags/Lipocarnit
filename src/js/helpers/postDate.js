@@ -1,42 +1,29 @@
 const months = [
-    "января",
-    "февраля",
-    "марта",
-    "апреля",
-    "мая",
-    "июня",
-    "июля",
-    "августа",
-    "сентября",
-    "октября",
-    "ноября",
-    "декабря",
+    "enero",
+    "febrero",
+    "marzo",
+    "abril",
+    "mayo",
+    "junio",
+    "julio",
+    "agosto",
+    "septiembre",
+    "octubre",
+    "noviembre",
+    "diciembre",
   ],
-  monthMin = [
-    "янв",
-    "фев",
-    "мар",
-    "апр",
-    "май",
-    "июн",
-    "июл",
-    "авг",
-    "сен",
-    "окт",
-    "ноя",
-    "дек",
-  ],
+  monthMin = ["", "", "", "", "", "", "", "", "", "", "", ""],
   days = [
-    "воскресенье",
-    "понедельник",
-    "вторник",
-    "среда",
-    "четверг",
-    "пятница",
-    "суббота",
+    "domingo",
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
   ],
-  daysMin = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"],
-  seasons = ["зима", "весна", "лето", "осень"];
+  daysMin = ["", "", "", "", "", "", ""],
+  seasons = ["invierno", "primavera", "verano", "otoño"];
 function postDate(
   daysName,
   daysMinName,
@@ -79,13 +66,12 @@ function postDate(
   }
   function changeFormat(_day, _month, _year, format, counter) {
     let innerFormat = format;
-    const testFormat = ["dd", "mm", "yyyy", "monthFull", "year"],
+    const testFormat = ["dd", "mm", "yyyy", "monthFull"],
       dateFormat = {
         dd: _day,
         mm: _month,
         yyyy: _year,
         monthFull: getMonthName(_month, monthsName, false),
-        year: getYearWithCounter(_year, counter),
       };
     for (let i = 0; i < testFormat.length; i++) {
       let string = testFormat[i];
@@ -101,9 +87,6 @@ function postDate(
           ? monthCounter - (12 - _month)
           : _month + monthCounter;
     return changeFirstLetter(bigFirstLetter, monthsName[month - 1]);
-  }
-  function getYearWithCounter(year, counter) {
-    return year + counter;
   }
   function addZero(numb) {
     return numb < 10 ? "0" + numb : numb;
