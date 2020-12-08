@@ -15,7 +15,7 @@
     background-color: #ffffff;
     width: 270px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 
     @include rm(768) {
       margin: 0;
@@ -151,7 +151,7 @@
 .form-q {
   &__title {
     color: #31363e;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 25px;
     text-align: center;
     @include rm(768) {
