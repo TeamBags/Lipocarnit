@@ -15,17 +15,19 @@
     background-color: #ffffff;
     width: 270px;
     margin: 0 auto;
-    padding: 32px 22px 53px;
+    padding: 20px;
 
     @include rm(768) {
       margin: 0;
       padding: 32px 22px 53px;
     }
     @include rm(1024) {
-      margin-top: -40px;
+      margin-top: -20px;
       margin-bottom: 18px;
     }
-
+    @include rm(1220) {
+      margin-top: -40px;
+    }
     .form__input {
       background-color: #fff;
     }
@@ -65,6 +67,11 @@
 
     span {
       border-bottom: 2px dotted #31363e;
+      transition: all 0.3s;
+      &:hover {
+        border-bottom: 2px dotted
+          transparentize($color: #31363e, $amount: 0.999);
+      }
     }
   }
   &__open {
@@ -144,8 +151,11 @@
 .form-q {
   &__title {
     color: #31363e;
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 25px;
     text-align: center;
+    @include rm(768) {
+      font-size: 36px;
+    }
   }
 }

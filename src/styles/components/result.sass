@@ -63,16 +63,18 @@
 		margin: auto
 		padding: 15px
 		.btn__big
-			font-size: 22px
+			font-size: 20px
 		+rm(1024)
 			display: flex
+			align-items: center
 			box-shadow: none
 			background: none
 			width: 100%
 			padding: 0
+			.btn
+				padding: 15px 10px
 		+rm(1220)
 			justify-content: center
-			align-items: center
 			.btn__big
 				font-size: 24px
 				padding: 4px 10px
@@ -84,10 +86,12 @@
 				margin-right: 20px
 				font-size: 28px
 				text-align: left
+				max-width: 160px
+				flex-shrink: 0
 			+rm(1220)
 				font-size: 36px
 				margin-right: 40px
-				max-width: 170px
+				max-width: 210px
 		.form
 			&__wrap
 				+rm(1024)

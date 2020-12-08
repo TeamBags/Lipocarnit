@@ -1,8 +1,10 @@
 .expert
 	position: relative
 	overflow: hidden
+	+rm(1024)
+		&.block
+			padding-top: 96px
 	+rm(1220)
-		padding-top: 96px
 		padding-bottom: 50px
 	&__block
 		+rm(1024)
@@ -53,10 +55,10 @@
 			right: calc(50% - 220px)
 		+rm(768)
 			bottom: 0
-			width: 280px
+			width: 240px
 			right: calc(50% - 360px)
 		+rm(1024)
-			width: 420px
+			width: 390px
 			right: calc(50% - 511px)
 		+rm(1220)
 			width: 500px
@@ -101,7 +103,7 @@
 		+rm(768)
 			font-size: 17px
 			line-height: 24px
-			max-width: 60%
+			max-width: 68%
 		+rm(1024)
 			max-width: 100%
 
