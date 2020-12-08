@@ -219,6 +219,9 @@ br {
     content: none !important;
   }
   .advantages__text {
-    max-width: 36%;
+    max-width: 36% !important;
+  }
+  .review__notes {
+    left: 37%;
   }
 }
