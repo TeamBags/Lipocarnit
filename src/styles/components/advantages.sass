@@ -254,16 +254,12 @@
 	color: $grey
 	font-size: 17px
 	line-height: 1.2
-	+rm(480)
-		text-align: center
-	+rm(640)
-		text-align: left
 	+rm(1024)
 		font-size: 18px
 		padding: 20px
 	+rm(1220)
 		padding: 39px 33px
-		line-height: 23px
+		line-height: 23px	
 	&__item
 		&:not(:last-of-type)
 			margin-bottom: 10px
@@ -275,6 +271,8 @@
 				padding-bottom: 12px
 		+rm(1220)
 			max-width: 89%
+			span
+				display: block
 			&:not(:last-of-type)
 				margin-bottom: 26px
 				padding-bottom: 26px

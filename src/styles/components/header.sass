@@ -1,10 +1,12 @@
 .header
 	overflow: hidden
+	&.block
+		padding-top: 15px
 	+rm(1024)
 		overflow: inherit
 		position: relative
 		&.block
-			padding-top: 70px
+			padding-top: 50px
 		&::before
 			content: ''
 			display: block
@@ -19,7 +21,7 @@
 			background-size: contain
 	+rm(1220)
 		&.block
-			padding-top: 92px
+			padding-top: 72px
 			padding-bottom: 46px
 			&::before
 				height: 692px

@@ -1,5 +1,6 @@
 .order {
   position: relative;
+
   &__title {
     text-align: center;
     margin-bottom: 20px;
@@ -29,6 +30,11 @@
   &__subtitle {
     text-align: center;
     font-style: italic;
+    font-size: 17px;
+
+    @include rm(1220) {
+      font-size: 18px;
+    }
 
     .green {
       font-style: normal;
@@ -66,9 +72,11 @@
     @include rm(640) {
       width: 32%;
     }
+
     @include rm(1024) {
       max-width: 100%;
     }
+
     &:not(:last-child) {
       margin-bottom: 25px;
 
@@ -107,6 +115,7 @@
         &::after {
           right: -27px;
         }
+
         &::before {
           right: -22px;
         }
@@ -128,8 +137,8 @@
     }
 
     @include rm(768) {
-      width: 230px;
-      height: 230px;
+      width: 210px;
+      height: 210px;
       margin: 0 auto 30px;
     }
 
@@ -170,9 +179,11 @@
   &__text {
     font-size: 16px;
     color: #49424c;
+
     br {
       display: none;
     }
+
     @include rm(1024) {
       br {
         display: block;
