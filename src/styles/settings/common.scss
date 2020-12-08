@@ -214,3 +214,11 @@ br {
     padding-top: 120px;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .list-doc::before {
+    content: none !important;
+  }
+  .advantages__text {
+    max-width: 36%;
+  }
+}

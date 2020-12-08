@@ -171,8 +171,3 @@
     }
   }
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .list-doc::before {
-    content: none !important;
-  }
-}
