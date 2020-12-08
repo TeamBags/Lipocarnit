@@ -145,8 +145,7 @@
 
     &--form {
       background-image: url(../img/form_copy.jpg);
-      background-size: 107%;
-      background-position: -5px -1px;
+      background-size: contain;
     }
 
     &--operator {
